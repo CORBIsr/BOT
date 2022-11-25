@@ -28,6 +28,9 @@ client.on("messageCreate", (message) => {
         if (message.content == "!ziomulo") {
             message.channel.send(`${message.author.username} ha detto: Dio Mulo`)
         }
+        if(message.content == "!music"){
+            message.channel.send("https://open.spotify.com/track/2t5mXdvqitDSHMm8l4xLQX")
+        }
     }
 
 })
