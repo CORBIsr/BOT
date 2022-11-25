@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord-buttons": "^4.0.0-deprecated",
     "discord.js": "^13.12.0"
   }
 }
