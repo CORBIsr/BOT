@@ -40,6 +40,9 @@ client.on("messageCreate", (message) => {
         if(message.content == prefisso + "music"){
             message.channel.send("https://open.spotify.com/track/2t5mXdvqitDSHMm8l4xLQX")
         }
+        if(message.content == "ciao"){
+            message.channel.send("Ciao brodi!!")
+        }
 
 
     }
