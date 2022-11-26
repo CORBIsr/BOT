@@ -19,24 +19,28 @@ client.on("messageCreate", (message) => {
 
         if (message.content == prefisso + "help") {
             var mes = new Discord.MessageEmbed()
-                .setTitle("Il Bot del Dio Mulo!")
-                .setDescription("!diomulo (descrizione)\n!ziomulo (Rica bestemia)")
+                .setTitle("Il Bot del Mulo!")
+                .setDescription("!mulobot (descrizione)\n!ziomulo\n!music")
+                
             message.channel.send({ embeds: [mes] })
         }
 
-        if (message.content == prefisso + "diomulo") {
+        if (message.content == prefisso + "mulobot") {
             var mes = new Discord.MessageEmbed()
-                .setTitle("Dio Mulo!")
+                .setTitle("MuloBot!")
                 .setDescription("https://m.facebook.com/Lagazzettadelmulo/?_rdr")
+                .setThumbnail("https://1.bp.blogspot.com/-DiRB2B8ht64/URztDZ2A9FI/AAAAAAAAO4I/FsssOa1kN-o/s200/Mulo.jpg")
             message.channel.send({ embeds: [mes] })
         }
         if (message.content == prefisso + "ziomulo") {
-            message.channel.send(`${message.author.username} ha detto: Dio Mulo`)
+            //message.channel.send(`${message.author.username} ha detto: Dio Mulo`)
+            message.channel.send("Noooo mi chiamo MuloBot!!")
         }
 
         if(message.content == prefisso + "music"){
             message.channel.send("https://open.spotify.com/track/2t5mXdvqitDSHMm8l4xLQX")
         }
+
 
     }
 
