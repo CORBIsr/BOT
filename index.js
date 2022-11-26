@@ -44,7 +44,7 @@ client.on("messageCreate", (message) => {
             message.channel.send("Ciao brodi!!")
         }
 
-        if (message.content === 'ping') {
+        if (message.content === "ping") {
             const row = new MessageActionRow()
                 .addComponents(
                     new MessageSelectMenu()
